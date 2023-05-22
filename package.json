@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "start:client": "lerna run --scope=smallchai-lowcode-client --stream dev"
+  },
   "devDependencies": {
     "lerna": "^6.6.2"
   }
