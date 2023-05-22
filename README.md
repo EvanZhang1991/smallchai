@@ -1,6 +1,7 @@
 # smallchai-lowcode-project
 小柴低代码平台
-
+## 项目简介
+1. 我们在
 ## 启动步骤
 本项目使用lerna进行monorepo管理工具进行管理，如果你还没有安装lerna，请执行
 ``` shell
@@ -15,3 +16,7 @@ lerna bootstrap
 npm run start:client
 ```
 
+启动服务端
+```
+npm run start:server
+```
