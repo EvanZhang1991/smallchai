@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "start:client": "lerna run --scope=smallchai-lowcode-client --stream dev",
-    "start:server": "lerna run --scope=smallchai-lowcode-serve --stream start:dev"
+    "start:server": "lerna run --scope=smallchai-lowcode-serve --stream start:dev",
+    "start:db": "lerna run --scope=smallchai-lowcode-db --stream start"
   },
   "devDependencies": {
     "lerna": "^6.6.2"

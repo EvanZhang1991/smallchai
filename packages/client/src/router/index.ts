@@ -3,7 +3,8 @@ import { Component } from 'vue';
 
 import CustomPage from '@/layout/Index.vue';
 import Login from '@/views/Login.vue'
-import ApplicationList from '@/views/application/list.vue'
+import ApplicationList from '@/views/application/List.vue'
+import AddApplication from '@/views/application/Add.vue'
 
 // 声明路由配置类型
 interface AppRouteConfig extends RouteRecordRaw {
@@ -38,9 +39,18 @@ const routes: AppRouteConfig[] = [
                 meta:{
                     title: '应用列表'
                 }
+            },
+            {
+                path: '/application/add',
+                name: 'addapplication',
+                component: AddApplication,
+                meta:{
+                    title: '添加应用'
+                }
             }
         ]
-    }
+    },
+    
 ];
 
 // 创建路由实例

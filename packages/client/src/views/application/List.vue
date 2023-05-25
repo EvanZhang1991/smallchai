@@ -2,7 +2,7 @@
     <div class="application-list-page-container">
         <el-row :gutter="20">
             <el-col :span="6">
-                <el-card>1</el-card>
+                <el-card @click="handleAddApplication()">1</el-card>
             </el-col>
             <el-col :span="6">
                 <el-card>2</el-card>
@@ -17,9 +17,12 @@
     </div>
 </template>
 
-<script>
-export default {
-
+<script lang="ts" setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+const handleAddApplication = () => {
+    console.log(123)
+    router.push({name: 'addapplication' })
 }
 </script>
 
